@@ -4,3 +4,7 @@ title: ""
 
 plugins:
   - jekyll-postcss
+  - jekyll-seo-tag
+
+postcss:
+  cache: false
