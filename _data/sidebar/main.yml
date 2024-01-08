@@ -1,0 +1,11 @@
+- name: Home
+  link: '/'
+  icon: '/assets/icons/home.svg'
+
+- name: Notes
+  link: '/notes/'
+  icon: '/assets/icons/notes.svg'
+
+- name: Writeups
+  link: '/writeups/'
+  icon: '/assets/icons/writeup.svg'
