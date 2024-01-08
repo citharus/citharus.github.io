@@ -1,6 +1,7 @@
 url: "https://citharus.github.io"
 baseurl: "citharus.github.com"
 title: ""
+description: ""
 
 plugins:
   - jekyll-postcss
