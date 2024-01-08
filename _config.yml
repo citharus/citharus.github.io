@@ -1,10 +1,15 @@
-url: "" 
-baseurl: ""
+url: "https://citharus.github.io"
+baseurl: "citharus.github.com"
 title: ""
 
 plugins:
   - jekyll-postcss
   - jekyll-seo-tag
+
+sass:
+  load_paths:
+    - _sass
+    - node_modules
 
 postcss:
   cache: false
