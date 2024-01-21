@@ -1,0 +1,17 @@
+---
+layout: base
+---
+
+<div class="grid gap-x-4 gap-2 grid-cols-[repeat(auto-fit,_minmax(20rem,_1fr))]">
+    {% for p in site.pages %}
+        {% if p.path == page.path %}
+        {% elsif p.path contains "writeups" %}
+            <div class="inline-block w-auto p-2 border-2 rounded-md">
+                <a href="{{ p.path | replace: ".md", "" | relative_url }}">
+                    <h3 class="text-lg font-medium">{{ p.title }}</h3>
+                </a>
+                <p>{{ p.description }}</p>
+            </div>
+        {% endif %}
+    {% endfor %}
+</div>
