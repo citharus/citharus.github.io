@@ -3,6 +3,12 @@ baseurl: "citharus.github.com"
 title: ""
 description: ""
 
+defaults:
+  - scope:
+      path: "assets/images"
+    values:
+      image: true
+
 plugins:
   - jekyll-postcss
   - jekyll-seo-tag
