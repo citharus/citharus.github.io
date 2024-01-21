@@ -2,6 +2,7 @@
 layout: writeup
 title: TryHackMe SSRF
 description: "Ein Writeup des TryHackMe Raums SSRF"
+date: 18.01.2024
 link: "https://tryhackme.com/room/ssrfhr"
 tags: [ssrf, thm, owasp, web]
 ---
