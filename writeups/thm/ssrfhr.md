@@ -19,9 +19,7 @@ Um den Nutzernamen, das Password und die Admin URL zu finden, muss per URL Param
 
 Dadurch werden die Antworten im Footer der Webseite angezeigt.
 
-#TODO: Bild einfügen
-
-<img src="C:\Users\citha\AppData\Roaming\Typora\typora-user-images\image-20240117224441205.png" alt="image-20240117224441205" />
+![](/assets/images/ssrfhr-01.png)
 
 Um die Flagge zu erhalten muss man sich anschließend mit diesen Daten anmelden.
 
@@ -31,11 +29,11 @@ Die Antwort auf die erste Frage ist “yea”.
 
 Um die Flagge des Admin Panels zu erhalten, muss im Category Dropdown die URL im `value` Attribut so geändert werden, dass sie zu `admin.php` verlinkt.
 
-<img src="C:\Users\citha\AppData\Roaming\Typora\typora-user-images\image-20240118101957419.png" alt="image-20240118101957419" />
+![](/assets/images/ssrfhr-02.png)
 
 Anschließend muss im Dropdown die veränderte Option ausgewählt werden
 
-<img src="C:\Users\citha\AppData\Roaming\Typora\typora-user-images\image-20240118102132066.png" alt="image-20240118102132066" />
+![](/assets/images/ssrfhr-03.png)
 
 Danach wird die Seite aktualisiert und man erhält die Admin Flagge.
 
@@ -47,9 +45,9 @@ Um die zweite und dritte Frage zu beantworten, muss in die URL die Adresse des P
 
 Nach einer kurzen Wartezeit, erscheint die Datei `data.html` im gleichen Ordner wie der Server. Die Datei kann anschließend im Browser geöffnet werden, um die Antworten zu finden.
 
-<img src="C:\Users\citha\AppData\Roaming\Typora\typora-user-images\image-20240118150428785.png" alt="image-20240118150428785" />
+![](/assets/images/ssrfhr-04.png)
 
-<img src="C:\Users\citha\AppData\Roaming\Typora\typora-user-images\image-20240118150551397.png" alt="image-20240118150551397" />
+![](/assets/images/ssrfhr-05.png)
 
 ### Crashing the Server
 
