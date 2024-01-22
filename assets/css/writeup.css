@@ -1,0 +1,9 @@
+---
+---
+h3 {
+    @apply text-xl font-medium mt-10 mb-1 block
+}
+
+img {
+    @apply block ml-auto mr-auto my-4
+}
