@@ -5,7 +5,7 @@
 
 <body>
 
-<main class="grid grid-cols-[var(--sidebarWidth)_minmax(0,_1fr)]">
+<main class="grid grid-cols-[var(--sidebarWidth)_minmax(0,_1fr)] max-w-screen-xl mx-auto">
     {%- include sidebar.html -%}
     <div class="w-[calc(100%-1rem)] h-[calc(100svh-1rem)] m-2 p-5 border-2 rounded-lg overflow-y-auto ">
         {{ content }}
