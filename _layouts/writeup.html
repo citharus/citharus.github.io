@@ -12,9 +12,7 @@
     <div class="w-[calc(100%-1rem)] h-[calc(100svh-1rem)] m-2 p-5 border-2 rounded-lg overflow-y-auto space-y-2">
         <h1 class="text-4xl font-bold text-center">{{ page.title | split: " " | last }}</h1>
         <div class="flex justify-center space-x-2">
-            {% for t in page.tags %}
-                <span class="px-2 rounded-lg bg-sky-500 hover:bg-sky-600 cursor-pointer">{{ t }}</span>
-            {% endfor %}
+            {% include tags.html tags=page.tags %}
         </div>
         <div>{{ content }}</div>
     </div>
