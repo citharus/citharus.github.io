@@ -1,0 +1,6 @@
+{% for t in include.tags %}
+    {% assign options = "bg-gradient-to-r bg-gradient-to-br bg-gradient-to-tr bg-gradient-to-l bg-gradient-to-bl bg-gradient-to-tl" | split: " " %}
+    {% assign randIndex = "now" | date: "%N" | modulo: 6 %}
+
+    <span class="px-2 rounded-lg cursor-pointer {{ options[randIndex] }} from-blue-500 to-orange-200 font-medium">{{ t }}</span>
+{% endfor %}
