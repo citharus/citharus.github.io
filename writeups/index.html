@@ -7,9 +7,12 @@ layout: base
         {% if p.path == page.path %}
         {% elsif p.path contains "writeups" %}
             <div class="inline-block w-auto p-2 border-2 rounded-md">
-                <a href="{{ p.path | replace: ".md", "" | relative_url }}">
-                    <h3 class="text-lg font-medium">{{ p.title }}</h3>
-                </a>
+                <span class="flex justify-between">
+                    <a href="{{ p.path | replace: ".md", "" | relative_url }}">
+                        <h3 class="text-lg font-medium inline">{{ p.title }}</h3>
+                    </a>
+                    <span class="text-sm">{{ p.date }}</span>
+                </span>
                 <p>{{ p.description }}</p>
             </div>
         {% endif %}
