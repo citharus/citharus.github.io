@@ -2,7 +2,7 @@
     <div class="h-[calc(100vh-1rem)] m-2 border-2 rounded-lg relative">
         <ul>
             <li class="flex justify-center">
-                <img class="rounded-full p-5 size-4/5" src="https://avatars.githubusercontent.com/u/49985139">
+                <img class="rounded-full p-5 size-4/5 m-0" src="https://avatars.githubusercontent.com/u/49985139">
             </li>
             <li class="pb-2 text-center">
                 <p class="text-4xl font-bold text-slate-800 mb-5">
@@ -12,7 +12,7 @@
                     {% for item in site.data.sidebar.social %}
                         <li>
                             <a href="{{ item.link }}" target="_blank">
-                                <img class="w-8" src="{{ item.icon | relative_url }}">
+                                <img class="w-8 m-0" src="{{ item.icon | relative_url }}">
                             </a>
                         </li>
                     {% endfor %}
