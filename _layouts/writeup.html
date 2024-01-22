@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+
+{%- include head.html -%}
+
+<link rel="stylesheet" href="{{ '/assets/css/writeup.css' | relative_url }}">
+
+<body>
+
+<main class="grid grid-cols-[var(--sidebarWidth)_minmax(0,_1fr)]">
+    {%- include sidebar.html -%}
+    <div class="w-[calc(100%-1rem)] h-[calc(100svh-1rem)] m-2 p-5 border-2 rounded-lg overflow-y-auto space-y-2">
+        <h1 class="text-4xl font-bold text-center">{{ page.title | split: " " | last }}</h1>
+        <div class="flex justify-center space-x-2">
+            {% for t in page.tags %}
+                <span class="px-2 rounded-lg bg-sky-500 hover:bg-sky-600 cursor-pointer">{{ t }}</span>
+            {% endfor %}
+        </div>
+        <div>{{ content }}</div>
+    </div>
+</main>
+
+</body>
+
+</html>
