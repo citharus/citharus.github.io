@@ -9,6 +9,8 @@ defaults:
     values:
       image: true
 
+permalink: /:categories/:title
+
 collections_dir: collections
 collections:
   writeups:
