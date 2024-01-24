@@ -1,0 +1,23 @@
+---
+layout: base
+title: Writeups - citharus
+---
+
+<div class="grid gap-x-4 gap-2 grid-cols-[repeat(auto-fit,_minmax(20rem,_1fr))]">
+    {% for writeup in site.writeups %}
+        {% if writeup.path == page.path %}
+            {% continue %}
+        {% endif %}
+
+        <div class="inline-block w-auto p-2 border-2 rounded-md">
+            <span class="flex justify-between">
+                <a href="{{ writeup.url }}">
+                    <h3 class="text-lg font-medium inline">{{ writeup.title }}</h3>
+                </a>
+                <span class="mt-auto text-sm">{{ writeup.date | date: "%d.%m.%Y" }}</span>
+            </span>
+            <p>{{ writeup.description }}</p>
+            {% include tags.html tags=writeup.tags %}
+        </div>
+    {% endfor %}
+</div>
