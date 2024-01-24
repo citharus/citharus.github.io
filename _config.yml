@@ -9,6 +9,13 @@ defaults:
     values:
       image: true
 
+collections_dir: collections
+collections:
+  writeups:
+    output: true
+  notes:
+    output: true
+
 plugins:
   - jekyll-postcss
   - jekyll-seo-tag
