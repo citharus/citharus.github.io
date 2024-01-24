@@ -9,6 +9,15 @@ defaults:
     values:
       image: true
 
+permalink: /:categories/:title
+
+collections_dir: collections
+collections:
+  writeups:
+    output: true
+  notes:
+    output: true
+
 plugins:
   - jekyll-postcss
   - jekyll-seo-tag
